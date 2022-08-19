@@ -1,5 +1,7 @@
 package com.tistory.shanepark.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.time.LocalDateTime;
 
 public class Board {
@@ -7,7 +9,9 @@ public class Board {
     private Long id;
     private String title;
     private String content;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createdAt;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime lastModifiedAt;
 
     public Board(Long id, String title, String content) {

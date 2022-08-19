@@ -15,6 +15,7 @@ apply plugin: 'eclipse'
 
 dependencies {
     implementation "com.linecorp.armeria:armeria:1.18.0"
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.3'
 //    implementation group: 'com.aayushatharva.brotli4j', name: 'brotli4j', version: '1.8.0'
     // Logging
     runtimeOnly 'ch.qos.logback:logback-classic:1.2.11'
